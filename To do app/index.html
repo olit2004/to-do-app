@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List 2024</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <header class="header">
+        <h1>Task List 2024</h1>
+        <form id="new-task-form">
+            <label for="new-task-input" class="sr-only">New Task</label>
+            <input 
+                type="text" 
+                name="new-task-input" 
+                id="new-task-input" 
+                placeholder="Add a new task..." />
+            <input 
+                type="date" 
+                id="task-date" 
+                name="task-date" />
+            <input 
+                type="submit"
+                id="new-task-submit" 
+                value="Add Task" />
+        </form>
+        <p id="feedback" class="feedback hidden">Please enter a task!</p>
+    </header>
+    <main class="main-content">
+        <section class="task-list">
+            <h2>Tasks</h2>
+            <div id="tasks"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Task List. Built with ❤️ by Olilt Oljira.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
